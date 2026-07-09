@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Rahulgiri Goswami -- Frontend Developer</title>
+<meta name="description" content="Frontend developer portfolio -- AI integration, Firebase, React, and algorithmic JavaScript projects." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="cursor-dot" id="cursorDot"></div>
+<canvas id="heroCanvas"></canvas>
+
+<nav class="nav">
+  <span class="nav-logo">RG</span>
+  <div class="nav-links">
+    <a href="#work" class="nav-link">Work</a>
+    <a href="#about" class="nav-link">About</a>
+    <a href="#skills" class="nav-link">Skills</a>
+    <a href="#contact" class="nav-link magnetic">Contact</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero-content">
+    <p class="hero-eyebrow reveal">Frontend Developer &middot; Kutch, Gujarat</p>
+    <h1 class="hero-title">
+      <span class="reveal">Rahulgiri</span>
+      <span class="reveal">Goswami</span>
+    </h1>
+    <p class="hero-sub reveal">
+      I build interfaces that connect to real things &mdash; AI models, live
+      databases, payment logic &mdash; not just static mockups. Five shipped
+      projects, each solving an actual problem.
+    </p>
+    <div class="hero-actions reveal">
+      <a href="#work" class="btn-primary magnetic">View work</a>
+      <a href="#contact" class="btn-ghost magnetic">Get in touch</a>
+    </div>
+  </div>
+  <div class="scroll-hint reveal">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</header>
+
+<main>
+  <section id="work" class="work-section">
+    <div class="section-head reveal">
+      <span class="section-eyebrow">01 &mdash; Selected work</span>
+      <h2>Five projects, five different problems.</h2>
+    </div>
+
+    <div class="project-grid">
+
+      <article class="project-card reveal">
+        <div class="project-card-top">
+          <span class="project-index">01</span>
+          <span class="project-tags">
+            <span class="tag">Groq API</span>
+            <span class="tag">Netlify Functions</span>
+          </span>
+        </div>
+        <h3>ScanScore</h3>
+        <p class="project-desc">AI-powered ATS resume analyzer. Scores resumes section-by-section using Llama 3.3, with the API key kept server-side via a serverless function.</p>
+        <div class="project-links">
+          <a href="https://scansore-ai.netlify.app/" target="_blank" rel="noopener" class="project-link-btn magnetic">Live demo &rarr;</a>
+          <a href="https://github.com/Herocoder-cloud/scanscore-resume-analyzer" target="_blank" rel="noopener" class="project-link-btn ghost magnetic">GitHub</a>
+        </div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-card-top">
+          <span class="project-index">02</span>
+          <span class="project-tags">
+            <span class="tag">Firebase Auth</span>
+            <span class="tag">Firestore</span>
+          </span>
+        </div>
+        <h3>Boarding</h3>
+        <p class="project-desc">A job application tracker styled like a departures board. Full auth, real-time CRUD, and per-user data security via Firestore rules.</p>
+        <div class="project-links">
+          <a href="https://radiant-brigadeiros-b6e867.netlify.app/" target="_blank" rel="noopener" class="project-link-btn magnetic">Live demo &rarr;</a>
+          <a href="https://github.com/Herocoder-cloud/boarding-job-tracker" target="_blank" rel="noopener" class="project-link-btn ghost magnetic">GitHub</a>
+        </div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-card-top">
+          <span class="project-index">03</span>
+          <span class="project-tags">
+            <span class="tag">Vanilla JS</span>
+            <span class="tag">Algorithms</span>
+          </span>
+        </div>
+        <h3>Math Rush</h3>
+        <p class="project-desc">A timed math game with procedurally generated questions. Difficulty and wrong-answer traps are algorithmically built per level, not hardcoded.</p>
+        <div class="project-links">
+          <a href="https://poetic-jalebi-decff9.netlify.app/" target="_blank" rel="noopener" class="project-link-btn magnetic">Live demo &rarr;</a>
+          <a href="https://github.com/Herocoder-cloud/math-rush-game" target="_blank" rel="noopener" class="project-link-btn ghost magnetic">GitHub</a>
+        </div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-card-top">
+          <span class="project-index">04</span>
+          <span class="project-tags">
+            <span class="tag">React</span>
+            <span class="tag">useReducer</span>
+          </span>
+        </div>
+        <h3>Verve</h3>
+        <p class="project-desc">A product cart demo built around real React state management &mdash; useReducer for cart logic, useMemo for derived totals, filtering and sorting.</p>
+        <div class="project-links">
+          <a href="https://product-cart-demopro.netlify.app/" target="_blank" rel="noopener" class="project-link-btn magnetic">Live demo &rarr;</a>
+          <a href="https://github.com/Herocoder-cloud/verve-react-cart" target="_blank" rel="noopener" class="project-link-btn ghost magnetic">GitHub</a>
+        </div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-card-top">
+          <span class="project-index">05</span>
+          <span class="project-tags">
+            <span class="tag">Firebase</span>
+            <span class="tag">jsPDF</span>
+            <span class="tag">Live FX rates</span>
+          </span>
+        </div>
+        <h3>Settle</h3>
+        <p class="project-desc">A freelance invoice tracker built to solve a problem I actually have &mdash; multi-currency clients, payment status, and downloadable PDF invoices.</p>
+        <div class="project-links">
+          <a href="https://herocoder-cloud.github.io/settle-invoicing/" target="_blank" rel="noopener" class="project-link-btn magnetic">Live demo &rarr;</a>
+          <a href="https://github.com/Herocoder-cloud/settle-invoicing" target="_blank" rel="noopener" class="project-link-btn ghost magnetic">GitHub</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section id="about" class="about-section">
+    <div class="section-head reveal">
+      <span class="section-eyebrow">02 &mdash; About</span>
+      <h2>Still early, moving fast.</h2>
+    </div>
+    <div class="about-grid">
+      <p class="about-text reveal">
+        I'm a frontend developer based in Kutch, Gujarat, building my way
+        into the industry through shipped, working software rather than
+        tutorials. Every project on this page is deployed, connects to a
+        real backend or API, and was built to be explainable line by line
+        &mdash; not just demoed.
+      </p>
+      <p class="about-text reveal">
+        Alongside development, I run a small freelance practice and have
+        worked on recruitment and hiring campaigns, which is part of why
+        Settle exists &mdash; it's a tool I actually needed. I'm looking for
+        a frontend or full-stack role where I can keep learning by
+        building real things.
+      </p>
+    </div>
+  </section>
+
+  <section id="skills" class="skills-section">
+    <div class="section-head reveal">
+      <span class="section-eyebrow">03 &mdash; Toolkit</span>
+      <h2>What I build with.</h2>
+    </div>
+    <div class="skills-grid reveal">
+      <div class="skill-group">
+        <h4>Core</h4>
+        <div class="pill-row">
+          <span class="pill">JavaScript (ES6+)</span>
+          <span class="pill">HTML5</span>
+          <span class="pill">CSS3</span>
+          <span class="pill">React</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h4>Backend & data</h4>
+        <div class="pill-row">
+          <span class="pill">Firebase Auth</span>
+          <span class="pill">Firestore</span>
+          <span class="pill">Netlify Functions</span>
+          <span class="pill">REST APIs</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h4>Tools</h4>
+        <div class="pill-row">
+          <span class="pill">Git & GitHub</span>
+          <span class="pill">Netlify</span>
+          <span class="pill">Groq / LLM APIs</span>
+          <span class="pill">jsPDF</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact-section">
+    <div class="contact-inner reveal">
+      <span class="section-eyebrow">04 &mdash; Contact</span>
+      <h2>Let's build something.</h2>
+      <p>Open to frontend and full-stack roles, freelance work, and anything in between.</p>
+      <div class="contact-actions">
+        <a href="mailto:your-email@example.com" class="btn-primary magnetic">Email me</a>
+        <a href="https://github.com/Herocoder-cloud" target="_blank" rel="noopener" class="btn-ghost magnetic">GitHub profile</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <span>Designed &amp; built by Rahulgiri Goswami</span>
+  <span>Deployed on Netlify &amp; GitHub Pages</span>
+</footer>
+
+<script src="https://unpkg.com/three@0.160.0/build/three.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
